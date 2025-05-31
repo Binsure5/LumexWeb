@@ -4,9 +4,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // GitHub Pages 설정 제거
+  // 커스텀 도메인을 사용할 때는 basePath와 assetPrefix가 필요하지 않습니다
   // basePath: '/LumexWeb',
   // assetPrefix: '/LumexWeb/',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig 
