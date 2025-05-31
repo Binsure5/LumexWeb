@@ -4,8 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/LumexWeb',
-  assetPrefix: '/LumexWeb/',
+  // GitHub Pages 설정 제거
+  // basePath: '/LumexWeb',
+  // assetPrefix: '/LumexWeb/',
 }
 
 module.exports = nextConfig 
