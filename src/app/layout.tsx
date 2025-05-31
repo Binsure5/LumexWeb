@@ -1,13 +1,6 @@
-'use client';
-
 import React from 'react';
 import './globals.css';
 import Header from './components/Header';
-
-export const metadata = {
-  title: 'LUMEX - 최고의 기술력과 자동화 솔루션',
-  description: '30년의 기술력과 노하우를 바탕으로 현재의 모습으로 성장하였습니다',
-};
 
 export default function RootLayout({
   children,
