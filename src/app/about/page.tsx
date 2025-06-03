@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function About() {
+export default function AboutPage() {
   const sections = [
     {
       title: 'CEO 인사말',
@@ -51,40 +51,164 @@ export default function About() {
   ];
 
   return (
-    <main className="pt-32 pb-16">
-      {/* Hero Section */}
-      <section className="relative h-[400px] bg-gray-900 text-white mb-16">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="container mx-auto px-4 h-full flex items-center relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              회사소개
-            </h1>
-            <p className="text-xl text-gray-300">
-              기술 혁신으로 미래를 선도하는 글로벌 기업 LUMEX
-            </p>
+    <main className="min-h-screen py-20">
+      {/* Company Overview Section */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">About LUMEX</h1>
+          
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Company Overview</h2>
+              <div className="space-y-4">
+                <p className="text-gray-600">
+                  LUMEX specializes in automotive production line automation, providing comprehensive solutions from engineering to mass production. We are committed to enhancing structural stability and precision in Body-in-White (BIW) welding systems.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <h3 className="font-bold">Company Name</h3>
+                    <p className="text-gray-600">LUMEX</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold">Established</h3>
+                    <p className="text-gray-600">February 14, 2025</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold">CEO</h3>
+                    <p className="text-gray-600">Jang Min-ho</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold">Employees</h3>
+                    <p className="text-gray-600">10+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Core Values</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="font-bold text-blue-600">Innovation</h3>
+                  <p className="text-gray-600">Leading technological advancement in automotive manufacturing automation</p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-blue-600">Reliability</h3>
+                  <p className="text-gray-600">Delivering consistent quality and trustworthy solutions</p>
+                </div>
+                <div>
+                  <h3 className="font-bold text-blue-600">Sustainable Growth</h3>
+                  <p className="text-gray-600">Fostering continuous improvement and long-term development</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Company Overview */}
-      <section className="container mx-auto px-4 mb-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">기업 개요</h2>
-          <p className="text-lg text-gray-600 mb-12">
-            LUMEX는 1994년 설립 이래 끊임없는 기술 혁신과 도전으로 자동차 부품 산업의 발전을 선도해 왔습니다.
-            특히 용접 로봇 자동화 시스템과 배터리 하우징 분야에서 세계적인 기술력을 인정받고 있으며,
-            글로벌 시장에서 지속적인 성장을 이어가고 있습니다.
-          </p>
-          <div className="grid md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6">
-                <div className="text-4xl font-bold text-blue-600 mb-2">
-                  {stat.number}
+      {/* Vision & Mission Section */}
+      <section className="py-12 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold mb-8">Vision & Mission</h2>
+          
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Vision</h3>
+              <p className="text-gray-600 mb-4">
+                Based on 'Luminous Next', we are dedicated to technological innovation for efficient manufacturing. Our vision is to redefine the future of automotive manufacturing through intelligent automation and cutting-edge engineering.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Mission</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">✓</span>
+                  <div>
+                    <strong>Maximize Efficiency</strong>
+                    <p className="text-gray-600">Develop smart automation solutions that optimize production speed and cost efficiency</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">✓</span>
+                  <div>
+                    <strong>Ensure Precision & Reliability</strong>
+                    <p className="text-gray-600">Provide high-quality, future-oriented manufacturing technology</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">✓</span>
+                  <div>
+                    <strong>Lead Industry 4.0 Transformation</strong>
+                    <p className="text-gray-600">Support global manufacturers through AI-based, data-driven automation</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2">✓</span>
+                  <div>
+                    <strong>Foster Sustainable Growth</strong>
+                    <p className="text-gray-600">Develop eco-friendly and scalable manufacturing technologies</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Organization Section */}
+      <section className="py-12 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold mb-8">Organization</h2>
+          
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Departments</h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-bold text-blue-600">Engineering and R&D</h4>
+                  <p className="text-gray-600">Technical innovation and advanced manufacturing system development</p>
                 </div>
-                <p className="text-gray-600">{stat.label}</p>
+                <div>
+                  <h4 className="font-bold text-blue-600">Production & Quality</h4>
+                  <p className="text-gray-600">Manufacturing process excellence and quality assurance</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-blue-600">Sales & Finance</h4>
+                  <p className="text-gray-600">Business growth and financial stability</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-blue-600">HR</h4>
+                  <p className="text-gray-600">Talent management and development</p>
+                </div>
               </div>
-            ))}
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Expertise Distribution</h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span>Engineering</span>
+                  <span className="text-blue-600">34%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Manufacturing & QC</span>
+                  <span className="text-blue-600">25%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Design</span>
+                  <span className="text-blue-600">20%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Support</span>
+                  <span className="text-blue-600">12%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Project Management</span>
+                  <span className="text-blue-600">9%</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
